@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VPz-xi-eAy">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View Controller-->
+        <scene sceneID="nzY-EJ-3om">
+            <objects>
+                <viewController id="VPz-xi-eAy" customClass="ChartViewController" customModule="SleepChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5BC-Wm-fXz"/>
+                        <viewControllerLayoutGuide type="bottom" id="SDa-M6-FZg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3KQ-rV-Ymq">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-nl-Kkr">
+                                <rect key="frame" x="20" y="28" width="627" height="29"/>
+                                <segments>
+                                    <segment title="今天"/>
+                                    <segment title="這週"/>
+                                    <segment title="這個月"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XaE-nl-Kkr" secondAttribute="trailing" id="5zd-6f-RuR"/>
+                            <constraint firstItem="XaE-nl-Kkr" firstAttribute="top" secondItem="5BC-Wm-fXz" secondAttribute="bottom" constant="8" id="PJE-Xm-iOC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XaE-nl-Kkr" secondAttribute="leading" id="aes-Mi-Lcc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aq0-Wp-diY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.56971514242889" y="-71.200000000000003"/>
+        </scene>
+    </scenes>
+</document>
