@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import HealthKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        if HKHealthStore.isHealthDataAvailable() {
+            let healthStore = HealthKitClass.sharedInstance.healthStore
+            
+            let writeTypes = Set([HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!])
+            let readTypes = Set([HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!])
+            
+            healthStore.requestAuthorization(toShare: writeTypes, read: readTypes, completion: {_,_ in })
+        }
+        else {
+            print("HealthData is not available")
+        }
+        
+        
         return true
     }
 
