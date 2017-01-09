@@ -10,6 +10,8 @@ import UIKit
 import HealthKit
 
 class HealthKitClass: NSObject {
+    let healthStore = HKHealthStore()
+    
     class var sharedInstance: HealthKitClass {
         struct Singleton {
             static let instance = HealthKitClass()
@@ -17,7 +19,4 @@ class HealthKitClass: NSObject {
         
         return Singleton.instance
     }
-    
-    let healthStore = HKHealthStore()
-
 }
