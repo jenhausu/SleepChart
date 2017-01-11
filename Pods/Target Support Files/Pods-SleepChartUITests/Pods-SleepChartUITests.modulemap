@@ -1,0 +1,6 @@
+framework module Pods_SleepChartUITests {
+  umbrella header "Pods-SleepChartUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

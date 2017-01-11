@@ -1,0 +1,6 @@
+framework module Pods_SleepChart {
+  umbrella header "Pods-SleepChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

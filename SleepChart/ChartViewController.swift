@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import PNChart
 
 class ChartViewController: UIViewController {
     let healthStore = HealthKitClass.sharedInstance.healthStore
@@ -61,5 +62,19 @@ class ChartViewController: UIViewController {
                 avgSleepTime[e] = (avgSleepTime[e] + sleepTime) / 2
             }
         }
+    }
+    
+    fileprivate func pnchart() {
+        let rect  = CGRect(x: 10, y: 40, width: self.view.frame.width - 50, height: self.view.frame.height - 100)
+        let barChart = PNBarChart.init(frame: rect)
+        
+        barChart.xLabels = ["週一", "週二", "週三", "週四", "週五", "週六", "週日"]
+        
+        barChart.yLabels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+        barChart.yValues = [avgSleepTime[1], avgSleepTime[2], avgSleepTime[3], avgSleepTime[4], avgSleepTime[5], avgSleepTime[6], avgSleepTime[7]]
+        
+        barChart.stroke()
+        self.view.addSubview(barChart)
+        
     }
 }

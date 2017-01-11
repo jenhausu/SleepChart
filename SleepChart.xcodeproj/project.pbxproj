@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D931E891E28ADF70062E67D /* PNChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D931E881E28ADF70062E67D /* PNChart.framework */; };
+		1D931E8B1E28ADFF0062E67D /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D931E8A1E28ADFF0062E67D /* UICountingLabel.framework */; };
 		1D9F575F1E23918B006AD1F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F575E1E23918B006AD1F0 /* AppDelegate.swift */; };
 		1D9F57671E23918B006AD1F0 /* SleepChart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F57651E23918B006AD1F0 /* SleepChart.xcdatamodeld */; };
 		1D9F57691E23918B006AD1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D9F57681E23918B006AD1F0 /* Assets.xcassets */; };
@@ -17,6 +19,9 @@
 		1D9F57921E2391C9006AD1F0 /* HealthKitClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F57901E2391C9006AD1F0 /* HealthKitClass.swift */; };
 		1D9F57941E2391D3006AD1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9F57931E2391D3006AD1F0 /* Main.storyboard */; };
 		1D9F57981E239200006AD1F0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D9F57971E239200006AD1F0 /* HealthKit.framework */; };
+		6D7DDAA867128BEF78CB004E /* Pods_SleepChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D4C9B707E8D57DF595C830 /* Pods_SleepChart.framework */; };
+		C43AA83F8D3CA43B53682D43 /* Pods_SleepChartUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEEE186D36C4AC2AB45229C1 /* Pods_SleepChartUITests.framework */; };
+		D76DE561444A79CB2BF6F722 /* Pods_SleepChartTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DEE49B9AD4D94490A59FD6 /* Pods_SleepChartTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D931E881E28ADF70062E67D /* PNChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PNChart.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SleepChart-cdziuhiznzxqayandtbvwnysoawn/Build/Products/Debug-iphonesimulator/PNChart/PNChart.framework"; sourceTree = "<group>"; };
+		1D931E8A1E28ADFF0062E67D /* UICountingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICountingLabel.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SleepChart-cdziuhiznzxqayandtbvwnysoawn/Build/Products/Debug-iphonesimulator/UICountingLabel/UICountingLabel.framework"; sourceTree = "<group>"; };
 		1D9F575B1E23918B006AD1F0 /* SleepChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9F575E1E23918B006AD1F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D9F57661E23918B006AD1F0 /* SleepChart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepChart.xcdatamodel; sourceTree = "<group>"; };
@@ -54,6 +61,17 @@
 		1D9F57931E2391D3006AD1F0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1D9F57951E239200006AD1F0 /* SleepChart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepChart.entitlements; sourceTree = "<group>"; };
 		1D9F57971E239200006AD1F0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		1DC2FCEB1E248FDF00D016AE /* PNChart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PNChart.framework; path = "Pods/../build/Debug-iphoneos/PNChart/PNChart.framework"; sourceTree = "<group>"; };
+		1DC2FCED1E248FE900D016AE /* SwiftCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCharts.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SleepChart-cdziuhiznzxqayandtbvwnysoawn/Build/Products/Debug-iphonesimulator/SwiftCharts/SwiftCharts.framework"; sourceTree = "<group>"; };
+		285AF3E85396C9ED860CBF4E /* Pods-SleepChartTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChartTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChartTests/Pods-SleepChartTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3342EA4E38602B98F832D403 /* Pods-SleepChartTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChartTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChartTests/Pods-SleepChartTests.release.xcconfig"; sourceTree = "<group>"; };
+		39DEE49B9AD4D94490A59FD6 /* Pods_SleepChartTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepChartTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D4C9B707E8D57DF595C830 /* Pods_SleepChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D238C4DAFE60D58E2CD09A7 /* Pods-SleepChartUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChartUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChartUITests/Pods-SleepChartUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E38F9C1C7A69AD96476CA1E /* Pods-SleepChartUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChartUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChartUITests/Pods-SleepChartUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BEFD63E5F45B4619DD05B63F /* Pods-SleepChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChart/Pods-SleepChart.debug.xcconfig"; sourceTree = "<group>"; };
+		D3691284034BBC413D307380 /* Pods-SleepChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SleepChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-SleepChart/Pods-SleepChart.release.xcconfig"; sourceTree = "<group>"; };
+		FEEE186D36C4AC2AB45229C1 /* Pods_SleepChartUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SleepChartUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D931E8B1E28ADFF0062E67D /* UICountingLabel.framework in Frameworks */,
+				1D931E891E28ADF70062E67D /* PNChart.framework in Frameworks */,
 				1D9F57981E239200006AD1F0 /* HealthKit.framework in Frameworks */,
+				6D7DDAA867128BEF78CB004E /* Pods_SleepChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76DE561444A79CB2BF6F722 /* Pods_SleepChartTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43AA83F8D3CA43B53682D43 /* Pods_SleepChartUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +113,7 @@
 				1D9F57801E23918B006AD1F0 /* SleepChartUITests */,
 				1D9F575C1E23918B006AD1F0 /* Products */,
 				1D9F57961E239200006AD1F0 /* Frameworks */,
+				9302317FF75F781086E64C96 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +164,29 @@
 		1D9F57961E239200006AD1F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D931E8A1E28ADFF0062E67D /* UICountingLabel.framework */,
+				1D931E881E28ADF70062E67D /* PNChart.framework */,
+				1DC2FCED1E248FE900D016AE /* SwiftCharts.framework */,
+				1DC2FCEB1E248FDF00D016AE /* PNChart.framework */,
 				1D9F57971E239200006AD1F0 /* HealthKit.framework */,
+				46D4C9B707E8D57DF595C830 /* Pods_SleepChart.framework */,
+				39DEE49B9AD4D94490A59FD6 /* Pods_SleepChartTests.framework */,
+				FEEE186D36C4AC2AB45229C1 /* Pods_SleepChartUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9302317FF75F781086E64C96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEFD63E5F45B4619DD05B63F /* Pods-SleepChart.debug.xcconfig */,
+				D3691284034BBC413D307380 /* Pods-SleepChart.release.xcconfig */,
+				285AF3E85396C9ED860CBF4E /* Pods-SleepChartTests.debug.xcconfig */,
+				3342EA4E38602B98F832D403 /* Pods-SleepChartTests.release.xcconfig */,
+				6D238C4DAFE60D58E2CD09A7 /* Pods-SleepChartUITests.debug.xcconfig */,
+				7E38F9C1C7A69AD96476CA1E /* Pods-SleepChartUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9F57861E23918B006AD1F0 /* Build configuration list for PBXNativeTarget "SleepChart" */;
 			buildPhases = (
+				5E52909D68427C29C5D987BC /* [CP] Check Pods Manifest.lock */,
 				1D9F57571E23918B006AD1F0 /* Sources */,
 				1D9F57581E23918B006AD1F0 /* Frameworks */,
 				1D9F57591E23918B006AD1F0 /* Resources */,
+				BFE60341DE6C370D32178B74 /* [CP] Embed Pods Frameworks */,
+				BBD46F0CBB60FF33C6CEB9BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9F57891E23918B006AD1F0 /* Build configuration list for PBXNativeTarget "SleepChartTests" */;
 			buildPhases = (
+				BED4095690CC01BDBEFA52EC /* [CP] Check Pods Manifest.lock */,
 				1D9F576E1E23918B006AD1F0 /* Sources */,
 				1D9F576F1E23918B006AD1F0 /* Frameworks */,
 				1D9F57701E23918B006AD1F0 /* Resources */,
+				0CB2D04C17A8E89D5E9E0920 /* [CP] Embed Pods Frameworks */,
+				0AD8C9E7B30BBA3E73687E85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D9F578C1E23918B006AD1F0 /* Build configuration list for PBXNativeTarget "SleepChartUITests" */;
 			buildPhases = (
+				4E9780479100DAF9C9ECBE93 /* [CP] Check Pods Manifest.lock */,
 				1D9F57791E23918B006AD1F0 /* Sources */,
 				1D9F577A1E23918B006AD1F0 /* Frameworks */,
 				1D9F577B1E23918B006AD1F0 /* Resources */,
+				D89FEACC0860BDDC510F3027 /* [CP] Copy Pods Resources */,
+				9F62A52B71185CCC9354348C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +334,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD8C9E7B30BBA3E73687E85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChartTests/Pods-SleepChartTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CB2D04C17A8E89D5E9E0920 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChartTests/Pods-SleepChartTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E9780479100DAF9C9ECBE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E52909D68427C29C5D987BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F62A52B71185CCC9354348C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChartUITests/Pods-SleepChartUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD46F0CBB60FF33C6CEB9BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChart/Pods-SleepChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED4095690CC01BDBEFA52EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFE60341DE6C370D32178B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChart/Pods-SleepChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89FEACC0860BDDC510F3027 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SleepChartUITests/Pods-SleepChartUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D9F57571E23918B006AD1F0 /* Sources */ = {
@@ -430,6 +621,7 @@
 		};
 		1D9F57871E23918B006AD1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEFD63E5F45B4619DD05B63F /* Pods-SleepChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SleepChart/SleepChart.entitlements;
@@ -437,6 +629,7 @@
 				INFOPLIST_FILE = SleepChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Su.SleepChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -445,6 +638,7 @@
 		};
 		1D9F57881E23918B006AD1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3691284034BBC413D307380 /* Pods-SleepChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = SleepChart/SleepChart.entitlements;
@@ -452,6 +646,7 @@
 				INFOPLIST_FILE = SleepChart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Su.SleepChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -460,6 +655,7 @@
 		};
 		1D9F578A1E23918B006AD1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285AF3E85396C9ED860CBF4E /* Pods-SleepChartTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +671,7 @@
 		};
 		1D9F578B1E23918B006AD1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3342EA4E38602B98F832D403 /* Pods-SleepChartTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +687,7 @@
 		};
 		1D9F578D1E23918B006AD1F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D238C4DAFE60D58E2CD09A7 /* Pods-SleepChartUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Z2Y87QNVT9;
@@ -504,6 +702,7 @@
 		};
 		1D9F578E1E23918B006AD1F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E38F9C1C7A69AD96476CA1E /* Pods-SleepChartUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Z2Y87QNVT9;
