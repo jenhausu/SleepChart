@@ -12,13 +12,19 @@ import PNChart
 
 class ChartViewController: UIViewController {
     let healthStore = HealthKitClass.sharedInstance.healthStore
+    let notificationCenter = NotificationCenter.default
     
     var sleepDatas : [HKCategorySample] = []
     var avgSleepTime : [Double] = [0, 0, 0, 0, 0, 0, 0, 0]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        notificationCenter.addObserver(forName:Notification.Name(rawValue:"DataProcessDone"), object:nil, queue:nil) {notification in
+            DispatchQueue.main.async {
+                self.pnchart()
+            }
+        }
         
         readData()
     }
@@ -37,6 +43,10 @@ class ChartViewController: UIViewController {
                                         }
                                         
                                         self.processData()
+                                        
+                                        
+                                        let notification = Notification.Name("DataProcessDone")
+                                        self.notificationCenter.post(name: notification, object: nil)
                                     }
                                     else {
                                         // No results were returned, check the error
@@ -64,7 +74,7 @@ class ChartViewController: UIViewController {
         }
     }
     
-    fileprivate func pnchart() {
+    @objc fileprivate func pnchart() {
         let rect  = CGRect(x: 10, y: 40, width: self.view.frame.width - 50, height: self.view.frame.height - 100)
         let barChart = PNBarChart.init(frame: rect)
         
