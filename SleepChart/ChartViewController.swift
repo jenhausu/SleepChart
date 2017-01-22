@@ -64,6 +64,10 @@ class ChartViewController: UIViewController {
     }
     
     fileprivate func processData(passDate: Int) {
+        for i in 0..<avgSleepTime.count {
+            avgSleepTime[i] = 0
+        }
+        
         let baseDate = Date().addingTimeInterval(-3600 * 24 * Double(passDate))
         
         for index in 0...self.sleepDatas.count - 1 {
