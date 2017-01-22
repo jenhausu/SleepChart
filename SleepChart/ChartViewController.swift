@@ -72,6 +72,10 @@ class ChartViewController: UIViewController {
                 avgSleepTime[e] = (avgSleepTime[e] + sleepTime) / 2
             }
         }
+        
+        for i in 1...7 {
+            avgSleepTime[i] = avgSleepTime[i] / 3600
+        }
     }
     
     @objc fileprivate func pnchart() {
