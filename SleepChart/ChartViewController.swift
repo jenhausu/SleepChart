@@ -46,11 +46,7 @@ class ChartViewController: UIViewController {
                                             }
                                         }
                                         
-                                        self.processData()
-                                        
-                                        
-                                        let notification = Notification.Name("DataProcessDone")
-                                        self.notificationCenter.post(name: notification, object: nil)
+                                        self.processData(passDate: 7)
                                     }
                                     else {
                                         // No results were returned, check the error
@@ -80,6 +76,10 @@ class ChartViewController: UIViewController {
         for i in 1...7 {
             avgSleepTime[i] = avgSleepTime[i] / 3600
         }
+        
+        
+        let notification = Notification.Name("DataProcessDone")
+        self.notificationCenter.post(name: notification, object: nil)
     }
     
     @objc fileprivate func pnchart() {
