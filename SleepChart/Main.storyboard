@@ -27,7 +27,7 @@
                                 <segments>
                                     <segment title="週"/>
                                     <segment title="月"/>
-                                    <segment title="全部"/>
+                                    <segment title="半年"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentChange:" destination="VPz-xi-eAy" eventType="valueChanged" id="bgr-yt-gof"/>
