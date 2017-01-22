@@ -30,7 +30,15 @@ class ChartViewController: UIViewController {
     }
     
     @IBAction func segmentChange(_ sender: UISegmentedControl) {
-        
+        switch sender.selectedSegmentIndex {
+        case 0:
+            processData(passDate: 7)
+        case 1:
+            processData(passDate: 30)
+        case 2:
+            processData(passDate: 180)
+        default: break
+        }
     }
     
     fileprivate func readData() {
@@ -55,21 +63,26 @@ class ChartViewController: UIViewController {
         healthStore.execute(q)
     }
     
-    fileprivate func processData() {
+    fileprivate func processData(passDate: Int) {
+        let baseDate = Date().addingTimeInterval(-3600 * 24 * Double(passDate))
+        
         for index in 0...self.sleepDatas.count - 1 {
             let goToBedTime = self.sleepDatas[index].startDate
             let wakeUpTime = self.sleepDatas[index].endDate
-            let sleepTime = DateInterval.init(start: goToBedTime, end: wakeUpTime).duration
             
-            let dateFormat = DateFormatter()
-            dateFormat.dateFormat = "e"
-            let e = Int(dateFormat.string(from: wakeUpTime))!
-            
-            if avgSleepTime[e] == 0 {
-                avgSleepTime[e] = sleepTime
-            }
-            else {
-                avgSleepTime[e] = (avgSleepTime[e] + sleepTime) / 2
+            if wakeUpTime > baseDate {
+                let sleepTime = DateInterval.init(start: goToBedTime, end: wakeUpTime).duration
+                
+                let dateFormat = DateFormatter()
+                dateFormat.dateFormat = "e"
+                let e = Int(dateFormat.string(from: wakeUpTime))!
+                
+                if avgSleepTime[e] == 0 {
+                    avgSleepTime[e] = sleepTime
+                }
+                else {
+                    avgSleepTime[e] = (avgSleepTime[e] + sleepTime) / 2
+                }
             }
         }
         
