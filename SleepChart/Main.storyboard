@@ -22,12 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-nl-Kkr">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="XaE-nl-Kkr">
                                 <rect key="frame" x="20" y="28" width="627" height="29"/>
                                 <segments>
-                                    <segment title="今天"/>
-                                    <segment title="這週"/>
-                                    <segment title="這個月"/>
+                                    <segment title="週"/>
+                                    <segment title="月"/>
+                                    <segment title="全部"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
