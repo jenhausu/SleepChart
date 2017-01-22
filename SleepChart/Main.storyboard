@@ -29,6 +29,9 @@
                                     <segment title="月"/>
                                     <segment title="全部"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="VPz-xi-eAy" eventType="valueChanged" id="bgr-yt-gof"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

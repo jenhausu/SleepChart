@@ -29,6 +29,10 @@ class ChartViewController: UIViewController {
         readData()
     }
     
+    @IBAction func segmentChange(_ sender: UISegmentedControl) {
+        
+    }
+    
     fileprivate func readData() {
         let q = HKSampleQuery.init(sampleType: HKSampleType.categoryType(forIdentifier: .sleepAnalysis)!,
                                    predicate: nil,
